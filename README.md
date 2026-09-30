@@ -56,7 +56,14 @@ Butuh Node 22 dan pnpm.
 
 Perintah lain: `pnpm build`, `pnpm lint`, `pnpm exec tsc --noEmit`.
 
-Kalau schema DB berubah, generate ulang `lib/database.types.ts` dengan `pnpm gen`. Perlu `pnpm dlx supabase login` sekali dulu. Kalau pakai project Supabase sendiri, ganti `--project-id` di script `gen` di `package.json`.
+Kalau schema DB berubah, generate ulang `lib/database.types.ts` dengan `pnpm gen`. Sebelumnya, hubungkan CLI ke project Supabase kamu sekali saja:
+
+```bash
+pnpm dlx supabase login
+pnpm dlx supabase link --project-ref <project-ref>
+```
+
+`<project-ref>` itu subdomain di `SUPABASE_URL` (`https://<project-ref>.supabase.co`). `supabase link` menyimpannya di `supabase/.temp/` .
 
 ## Database
 
