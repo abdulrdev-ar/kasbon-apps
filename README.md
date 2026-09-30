@@ -2,7 +2,7 @@
 
 Web app sederhana buat nyatet utang piutang pribadi: siapa hutang berapa ke kamu, kamu hutang berapa ke siapa, dan mana yang sudah lunas.
 
-**Demo:** [LINK VERCEL, isi setelah deploy]
+**Demo:** https://kasbon-apps-plum.vercel.app/
 
 ## Stack
 
